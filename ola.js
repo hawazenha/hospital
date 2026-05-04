@@ -3,7 +3,14 @@ const mainNav = document.getElementById('main-nav');
 
 
 
-
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+}
+if (themeBtn) 
+    themeBtn.onclick = () => {
+        document.body.classList.toggle('dark-mode');
+        const mode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+        localStorage.setItem('theme', mode);
 if(layoutBtn) {
 layoutBtn.onclick=()=>{
 mainNav.classList.toggle('vertical-nav');
