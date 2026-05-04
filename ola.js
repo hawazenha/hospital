@@ -2,7 +2,9 @@ const layoutBtn = document.getElementById('layout-toggle');
 const mainNav = document.getElementById('main-nav');
 const themeBtn = document.getElementById('theme-toggle');
 
-if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+}
 
 if (themeBtn) {
     themeBtn.onclick = () => {
@@ -19,7 +21,10 @@ if (layoutBtn) {
 }
 
 function navigateTo(pageId) {
-    document.querySelectorAll('main section').forEach(p => p.classList.replace('active-page', 'hidden-page'));
+    document.querySelectorAll('main section').forEach(p => {
+        p.classList.add('hidden-page');
+        p.classList.remove('active-page');
+    });
     document.getElementById(pageId).classList.replace('hidden-page', 'active-page');
 }
 
