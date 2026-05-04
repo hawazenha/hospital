@@ -8,6 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position:relative;
     margin: 0;
 }
 nav ul{
@@ -69,7 +70,7 @@ body.alt-layout .nav ul li {
     position: static; 
 }
 .toop {
-    position: fixed;
+    position: absolute;
     top: 90px;
     right: 20px;
     display: flex; 
@@ -181,7 +182,7 @@ table th{
     font-size: 17px;
 }
 table td{
-    background-color: rgb(201, 201, 194);
+    background-color:#E0B4B2;
  padding: 15px ;
 }
 footer {
@@ -224,5 +225,20 @@ justify-content: center;
     cursor: pointer; 
 }
 body.dark-mode{
-    background-color:rgb(37, 78, 105);
+    background-color:#0E1D21;
+}
+body.dark-mode nav ul{
+    background-color:#122E34;
+}
+body.dark-mode footer{
+    background-color:#0E1D21;
+    color:white;
+}
+body.dark-mode th td{
+   background-color:#122E34;
+    color:white;
+}
+body.dark-mode .mode-btn, .but{
+     background-color:#122E34;
+    color:white;
 }
