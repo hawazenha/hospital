@@ -1,45 +1,37 @@
 const layoutBtn = document.getElementById('layout-toggle');
 const mainNav = document.getElementById('main-nav');
+const themeBtn = document.getElementById('theme-toggle');
 
+if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');
 
-
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-mode');
-}
-if (themeBtn) 
+if (themeBtn) {
     themeBtn.onclick = () => {
         document.body.classList.toggle('dark-mode');
-        const mode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-        localStorage.setItem('theme', mode);
-if(layoutBtn) {
-layoutBtn.onclick=()=>{
-mainNav.classList.toggle('vertical-nav');
-layoutBtn.textContent = mainNav.classList.contains('vertical-nav') ? 'Grid' : 'List';
-};
+        localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    };
 }
-function navigateTo(pageId){
-document.querySelectorAll('main section').forEach(page => {
-page.classList.add('hidden-page');
-page.classList.remove('active-page');
-});
-document.getElementById(pageId).classList.remove('hidden-page');
-document.getElementById(pageId).classList.add('active-page');
+
+if (layoutBtn) {
+    layoutBtn.onclick = () => {
+        mainNav.classList.toggle('vertical-nav');
+        layoutBtn.textContent = mainNav.classList.contains('vertical-nav') ? 'Grid' : 'List';
+    };
 }
+
+function navigateTo(pageId) {
+    document.querySelectorAll('main section').forEach(p => p.classList.replace('active-page', 'hidden-page'));
+    document.getElementById(pageId).classList.replace('hidden-page', 'active-page');
+}
+
 function openDocProfile(name, img) {
-const profileName = document.getElementById('profile-doc-name');
-const profileImg = document.getElementById('profile-doc-img'); 
-if(profileName && profileImg){
-profileName.innerText = name;
-profileImg.src = img;
-navigateTo('doc-profile-page');
+    document.getElementById('profile-doc-name').innerText = name;
+    document.getElementById('profile-doc-img').src = img;
+    navigateTo('doc-profile-page');
 }
+
+function handleBooking(time) {
+    const doc = document.getElementById('profile-doc-name').innerText;
+    sessionStorage.setItem('selectedDocName', doc);
+    sessionStorage.setItem('selectedSchedule', time);
+    window.location.href = 'booking.html';
 }
-function handleBooking(time){
-const docName = document.getElementById('profile-doc-name').innerText;
-sendData(docName, time);
-}
-function sendData(doc, time){
-sessionStorage.setItem('selectedDocName', doc);
-sessionStorage.setItem('selectedSchedule', time);
-window.location.href = 'booking.html'; 
-};
