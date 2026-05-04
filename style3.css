@@ -191,7 +191,7 @@ justify-content: center;
 .card1, .card2, .card3, .card4 {
     cursor: pointer; /* ---*/
 }
-body.dark{
+body.dark-mode{
     background-color:rgb(37, 78, 105);
 }
 #btn{
