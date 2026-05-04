@@ -9,7 +9,8 @@ if (localStorage.getItem('theme') === 'dark') {
 if (themeBtn) {
     themeBtn.onclick = () => {
         document.body.classList.toggle('dark-mode');
-        localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        const mode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+        localStorage.setItem('theme', mode);
     };
 }
 
@@ -21,22 +22,33 @@ if (layoutBtn) {
 }
 
 function navigateTo(pageId) {
-    document.querySelectorAll('main section').forEach(p => {
-        p.classList.add('hidden-page');
-        p.classList.remove('active-page');
+    document.querySelectorAll('main section').forEach(page => {
+        page.classList.add('hidden-page');
+        page.classList.remove('active-page');
     });
-    document.getElementById(pageId).classList.replace('hidden-page', 'active-page');
+    const target = document.getElementById(pageId);
+    if (target) {
+        target.classList.remove('hidden-page');
+        target.classList.add('active-page');
+    }
 }
 
 function openDocProfile(name, img) {
-    document.getElementById('profile-doc-name').innerText = name;
-    document.getElementById('profile-doc-img').src = img;
-    navigateTo('doc-profile-page');
+    const profileName = document.getElementById('profile-doc-name');
+    const profileImg = document.getElementById('profile-doc-img');
+    if (profileName && profileImg) {
+        profileName.innerText = name;
+        profileImg.src = img;
+        navigateTo('doc-profile-page');
+    }
 }
 
 function handleBooking(time) {
-    const doc = document.getElementById('profile-doc-name').innerText;
-    sessionStorage.setItem('selectedDocName', doc);
-    sessionStorage.setItem('selectedSchedule', time);
-    window.location.href = 'booking.html';
+    const nameElement = document.getElementById('profile-doc-name');
+    if (nameElement) {
+        const docName = nameElement.innerText;
+        sessionStorage.setItem('selectedDocName', docName);
+        sessionStorage.setItem('selectedSchedule', time);
+        window.location.href = 'booking.html';
+    }
 }
