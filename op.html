@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical zone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    
+<header>
+<div class="nav" id="main-nav">
+<button id="layout-toggle" class="layout-btn">List</button><br><br>
+<a href="index.html">Home</a><br><br>
+<a href="pe.html">pediatrics</a><br><br>
+<a href="ne.html">Neurology</a><br><br>
+<a href="im.html">internal medical</a><br><br>
+<a href="de.html">dentist</a><br><br>
+<a href="op.html">ophthalmology</a><br><br>
+<a href="co.html">contact us</a><br><br>
+</div>
+</header>
+
+
+
+
+<button id="theme-toggle">Mode</button>
+<main>
+<section id="doc-page" class="active-page">
+<h2 class="page-title">Ophthalmology Specialists</h2>
+<div class="doc-list">
+<div class="doc-card" onclick="openDocProfile('Dr. Adel', 'DB.jpeg')">
+<div class="img-container">
+<img src="DB.jpeg" alt="Doc">
+</div>
+
+<div class="doc-info">
+<h3>Dr. Adel</h3>
+<p>Consultant Ophthalmologist</p>
+<div class="rating">⭐⭐⭐⭐</div>
+</div>
+</div>
+
+<div class="doc-card" onclick="openDocProfile('Dr. Ahmad', 'DB.jpeg')">
+<div class="img-container">
+<img src="DB.jpeg" alt="Doc">
+</div>
+<div class="doc-info">
+<h3>Dr. Ahmad</h3>
+<p>Senior Eye Specialist</p>
+<div class="rating">⭐⭐⭐</div>
+</div>
+
+</div>
+<div class="doc-card" onclick="openDocProfile('Dr. Aya', 'DG.jpeg')">
+<div class="img-container">
+<img src="DG.jpeg" alt="Doc">
+</div>
+<div class="doc-info">
+<h3>Dr. Aya</h3>
+<p>Eye Surgeon</p>
+<div class="rating">⭐⭐⭐⭐⭐</div>
+</div>
+</div>
+
+<div class="doc-card" onclick="openDocProfile('Dr. Sara', 'DG.jpeg')">
+<div class="img-container">
+<img src="DG.jpeg" alt="Doc">
+</div>
+<div class="doc-info">
+<h3>Dr. Sara</h3>
+<p>Retina Specialist</p>
+<div class="rating">⭐⭐</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="doc-profile-page" class="hidden-page">
+<div class="doc-frame">
+<div class="img-container-profile">
+<img id="profile-doc-img" src="" alt="Doc">
+</div>
+<div class="profile-info">
+<h2 id="profile-doc-name"></h2>
+<p>Medical zone Expert</p>
+</div>
+</div>
+
+<div class="schedule-section">
+<h3 class="section-subtitle">Available Appointments:</h3>
+
+<table class="schedule-table">
+<thead>
+<tr>
+<th>Day</th>
+<th>Date</th>
+<th>Time</th>
+<th>Fees</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Mon</td>
+<td>2026/8/27</td>
+<td>8:00 PM</td>
+<td>500 E</td>
+<td><button class="table-book-btn" onclick="handleBooking('Monday 08:00 PM')">Book Now</button></td>
+</tr>
+
+<tr>
+<td>Tues</td>
+<td>2026/8/28</td>
+<td>7:00 AM </td>
+<td>500 E</td>
+<td><button class="table-book-btn" onclick="handleBooking('Tuesday 02:00 PM')">Book Now</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+
+
+
+<footer>
+<p>&copy; 2026 Medical Zone. All rights reserved.</p>
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+<script src="ola.js"></script>
+
+
+
+
+</body>
+</html>
