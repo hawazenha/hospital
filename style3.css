@@ -44,7 +44,7 @@ body.alt-layout .nav ul{
     margin: 10px;
     flex-direction: column;
     width: 250px;
-    height: 350px;
+    height: 500px;
 }
 body.alt-layout .nav ul li {
     margin-bottom: 10px;
@@ -181,7 +181,7 @@ border-radius:20px ;
 }
 table th{
     background-color:#757575; 
-    color: bisque;
+    color: white;
     padding: 13px;
     font-size: 17px;
 }
