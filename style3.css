@@ -17,7 +17,7 @@ nav ul{
     display: flex;
     list-style: none;
     padding: 10px;
-    margin: 10px auto;
+    margin: 0 auto;
     justify-content: center;
     gap:40px;
  }
@@ -180,7 +180,7 @@ border-radius:20px ;
  overflow: hidden;
 }
 table th{
-    background-color:#757575; 
+    background-color:#677E8A; 
     color: black;
     padding: 13px;
     font-size: 17px;
