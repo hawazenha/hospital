@@ -34,12 +34,12 @@ video {
     border-radius:18px;
     margin:18px 0;}
     
-body.darktheme {
+body.dark-mode {
 background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('IMG 2.jpeg') no-repeat center center fixed ;
 background-size: cover;
 color: white;
 }
-body.darktheme .glass-box {
+body.dark-mode .glass-box {
  background:rgba(14, 29, 33, 0.8) ;
  color:white;
  border:1px solid rgba(255, 255, 255, 0.1);
