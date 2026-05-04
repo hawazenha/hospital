@@ -180,13 +180,13 @@ border-radius:20px ;
  overflow: hidden;
 }
 table th{
-    background-color:#677E8A; 
+    background-color:#333333; 
     color: bisque;
     padding: 13px;
     font-size: 17px;
 }
 table td{
-    background-color:#E0B4B2;
+    background-color:#E0E0E0;
  padding: 15px ;
 }
 footer {
@@ -250,7 +250,7 @@ body.dark-mode h5{
     color:white;
 }
 body.dark-mode h2{
-    color:white;
+    color:black;
 }
 body.dark-mode h4 {
     background-color:#122E34;
