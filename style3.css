@@ -4,7 +4,7 @@
    box-sizing: border-box ;  
 }
 body{
-    background-color:rgb(225, 217, 217);
+    background-color:#b8c5cc;
       flex-direction: column;
 }
 nav ul{
@@ -157,11 +157,14 @@ table td{
  padding: 15px ;
 }
 footer {
- text-align: center;
- padding: 25px 0;
- margin-top: 30px;
-border-top: 1px solid white; 
- font-size: 14px;
+    background-color: #677E8A;
+    text-align: center;
+    padding: 5px ;
+    margin-top: auto;
+    border-top: 1px solid white; 
+    font-size: 15px;
+    width: 100%;
+    min-height: auto;
 }
  
 .section {
