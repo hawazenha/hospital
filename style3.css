@@ -238,7 +238,7 @@ body.dark-mode footer{
     background-color:#122E34;
     color:white;
 }
-body.dark-mode th,body.dark-mode td{
+body.dark-mode table th,body.dark-mode table td{
    background-color:#122E34;
     color:white;
 }
@@ -246,6 +246,6 @@ body.dark-mode .mode-btn, .but{
      background-color:#122E34;
     color:white;
 }
-h5{
+body.dark-mode h5{
     color:white;
 }
