@@ -252,5 +252,6 @@ body.dark-mode h5{
 body.dark-mode h2{
     color:white;
 }
-body.dark-mode .card1 ,.card2,.card3,.card4 {
-    
+body.dark-mode h4 {
+    background-color:#122E34;
+}
