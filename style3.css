@@ -259,3 +259,7 @@ body.dark-mode h4 {
 body.dark-mode p{
     color:white;
 }  
+body.dark-mode h3{
+    background-color: #122E34 ;
+    color:white;
+}  
