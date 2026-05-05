@@ -381,10 +381,11 @@ justify-content: flex-start;
 footer p {
     justify-content: center;
     display: flex;
-    margin-top: 70px;
+    margin-top: 40px;
     font-size: 20px;
     font-weight: 600;
     color: #677e8a;
+    margin-bottom: 30px;
 }
 body{
     background-color: #333;
