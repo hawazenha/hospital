@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neurosurgery Doctors</title>
+  <link rel="stylesheet" href="styles/ne.css">
+  <link rel="stylesheet" href="styles/fonts.css">
+</head>
+
+<body>
+
+<header>
+        <div class="hero">
+          <nav>
+            <img class="logo" src="logo.jpg">
+
+<h1 class="font">Neurosurgery Department</h1>
+            <div class="nav-links">
+              
+              <li class="font"><a href="home.html">Home</a></li>
+              <li  class="font"><a href="pe.html">Pediatric</a></li>
+              <li  class="font"><a href="ne.html">Neurosurgery</a></li>
+              <li class="font"><a href="IM.html">Internal Medical</a></li>
+              <li class="font"><a href="dentaset.html">Dentist</a></li>
+              <li class="font"><a href="op.html">Ophthalmology</a></li>
+              <li  class="font"><a href="about us.html">Contact us</a></li>
+            </div>
+          </nav>
+<img src="layout.jpg" id="layout" class="but">
+<img src="moon.jpg" id="btn" class="mode-btn">
+  
+        </div>
+</header>
+
+<main>
+
+  <section class="doctors">
+     <div class="card" onclick="showDoctor('yep/doc1.html')">
+      <h3 class="font">Dr. Wira</h3>
+      <p class="font">Brain Tumor Specialist</p>
+    </div>
+        
+    <div class="card" onclick="showDoctor('yep/doc2.html')">
+      <h3 class="font">Dr.Noor</h3>
+      <p class="font">Spine Surgeon</p>
+  </div>
+
+    <div class="card" onclick="showDoctor('yep/doc3.html')" >
+      <h3 class="font">Dr.Ashria</h3>
+      <p class="font">Neurovascular Expert</p>
+    </div>
+  
+  <div class="card" onclick="showDoctor('yep/doc4.html')"  >
+      <h3 class="font">Dr. Ronald</h3>
+      <p class="font">Pediatric Neurosurgeon</p>
+    </div>
+  </section>
+  
+
+  <iframe id="frame" src="yep/welcome.html" ></iframe>
+<script>
+
+function showDoctor(page) {
+  document.getElementById("frame").src = page;
+}
+</script>
+</main>
+
+<script src="scripts/ne.js"></script>
+
+<p style="font-size: xx-large;color:#c8cccd;">
+  with our best wishes of speedy and full recovery <3 </p>
+</body>
+
+<footer>
+    <p>&copy; 2026 Medical Zone. All rights reserved.</p>
+</footer>
+</html>

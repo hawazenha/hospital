@@ -1,0 +1,73 @@
+
+<div class="content">
+  <script src="scripts/ne.js"></script>
+<img src="ngl3.jpg">
+  <div>
+      <p>✔ 6+ years of experience</p>
+    <p>✔ Specialist in stroke and vascular brain diseases</p>
+    <p>✔ Worked in international medical centers</p>
+    <p>✔ Known for high success rates in such a young age</p>
+  </div>
+<div>
+    <span style="color: gold;" >★★★★☆</span>
+    <strong>(4.3/5)</strong>
+  </div>
+  <p >Consultation Fee: $50</p>
+  <div>
+    <p >Select appointment:</p>
+<input type="radio" value="10:00 AM">5:00 PM- 8:00 PM<a href="../booking.html">
+    <button style="border-radius: 8px; background-color: ghostwhite;" onclick="sendData('Dr.Ashria', '5:00 PM- 8:00 PM')">Book Now</button>
+</input>
+<br>
+<input type="radio" value="10:00 AM"> 8:00 PM - 10:00 PM<a href="../booking.html">
+    <button style="border-radius: 8px; background-color: ghostwhite;" onclick="sendData('Dr.Ashria', '8:00 PM - 10:00 PM')">Book Now</button>
+</input>
+  </div>
+
+  
+</div>
+
+<style>
+
+body {
+  font-family: Arial;
+}
+
+.content {
+  color: rgb(224, 243, 244);
+  text-align: left;
+  flex-direction: row;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  padding-top:40px;
+  align-items:center;
+  gap: 20px;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: show 0.6s ease forwards;
+}
+
+img {
+  width: 45%;
+  max-width: 300px;
+  border-radius: 10px;
+  text-align: left;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+
+  align-items:center;
+  gap: 20px;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: show 0.6s ease forwards;
+
+}
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
