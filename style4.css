@@ -10,11 +10,11 @@ font-family:sans-serif, 'Segoe UI';
 
 
 :root{
---bg-color: #F0F9F4;
+--bg-color:#ABAFB5
 --text-color: #1A3026;
---card-bg: #FFFFFF;
+--card-bg: #677E8A;
 --accent: #2D6A4F;
---border-color: #D8E8E0;
+--border-color:white;
 }
 
 body.dark-mode{
