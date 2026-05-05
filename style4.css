@@ -14,7 +14,7 @@ font-family:sans-serif, 'Segoe UI';
 --text-color: #1A3026;
 --card-bg: #677E8A;
 --accent: #2D6A4F;
---border-color:white;
+--border-color:#ffffff;
 }
 
 body.dark-mode{
